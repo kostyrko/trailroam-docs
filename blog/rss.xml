@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>TrailRoam Docs Blog</title>
+        <link>https://kostyrko.github.io/trailroam-docs/blog</link>
+        <description>TrailRoam Docs Blog</description>
+        <lastBuildDate>Sun, 14 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Introducing TrailRoam for Strava v0.1.0]]></title>
+            <link>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0</link>
+            <guid>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0</guid>
+            <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Browse all your Strava activities on a single interactive map..]]></description>
+            <content:encoded><![CDATA[<p>Browse all your Strava activities on a single interactive map..</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">Features<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Sync with Strava</strong> — Import activities and GPS routes directly from your logged-in Strava session</li>
+<li class=""><strong>Map Explorer</strong> — View all your Strava GPS routes on one single map. Switch between OpenFreeMap and OpenTopoMap base layers</li>
+<li class=""><strong>Heatmap</strong> — Toggle a route-density heatmap to visualize your most frequent roads and trails</li>
+<li class=""><strong>Map Controls</strong> — Zoom, scale bar, fit-to-screen, and route clustering at low zoom levels</li>
+<li class=""><strong>Opacity Slider</strong> — Adjust route line opacity on the map</li>
+<li class=""><strong>Activities List</strong> — Browse imported activities with search, sport type filter, date range filter, and name search. Sort by date, name, type, distance, speed, time, or route status</li>
+<li class=""><strong>Activity Detail Panel</strong> — Click any activity to open a side panel with an interactive mini-map, speed-colored route, elevation profile, metrics, and GPX download</li>
+<li class=""><strong>Bulk Actions</strong> — Multi-select activities for bulk GPX export (as zip) or deletion</li>
+<li class=""><strong>GPX Export</strong> — Export GPX files, export individual or bulk routes</li>
+<li class=""><strong>Backup &amp; Restore</strong> — Export and import all your local data as JSON</li>
+<li class=""><strong>Settings Dashboard</strong> — Settings page with grouped action cards, sync history, and privacy information</li>
+<li class=""><strong>App Menu</strong> — Quick access to release notes, bug reporting, documentation, and the About dialog</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical">Technical<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0#technical" class="hash-link" aria-label="Direct link to Technical" title="Direct link to Technical" translate="no">​</a></h2>
+<ul>
+<li class="">Chrome Extension Manifest V3</li>
+<li class="">Angular standalone components</li>
+<li class="">MapLibre GL JS with OpenFreeMap (no API key required)</li>
+<li class="">IndexedDB / Dexie.js for local storage</li>
+<li class="">All data stored locally — no backend, no cloud sync</li>
+</ul>]]></content:encoded>
+            <category>release</category>
+            <category>strava</category>
+        </item>
+    </channel>
+</rss>
