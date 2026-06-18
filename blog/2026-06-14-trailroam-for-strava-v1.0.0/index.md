@@ -1,6 +1,6 @@
 ---
-slug: trailroam-for-strava-v0.1.0
-title: Introducing TrailRoam for Strava v0.1.0
+slug: trailroam-for-strava-v1.0.0
+title: Introducing TrailRoam for Strava v1.0.0
 authors: [mkostyrko]
 tags: [release, strava]
 ---
