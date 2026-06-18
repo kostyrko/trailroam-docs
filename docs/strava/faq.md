@@ -26,7 +26,7 @@ Activities recorded without GPS (e.g., indoor workouts, treadmill) don't have ro
 Click the **Download GPX** button on any activity detail panel, or bulk-select activities and use the **Download GPX** action in the toolbar.
 
 ### Can I import GPX files from other apps?
-Yes. Go to Settings and use **Restore local data** or drag GPX files into the import dialog. You can choose the sport type during import.
+No. This functionality is not currently supported. You can only sync activities from Strava. We plan to add GPX import in a future release.
 
 ### How do I back up my data?
 Go to **Settings** → **Backup local data**. This downloads a JSON file with all your activities, routes, and settings.
@@ -38,4 +38,4 @@ No. You can sync all your Strava activities. Performance warnings are shown when
 Go to **Settings** → **Clear synced local data**. This removes activities and routes from the browser without affecting your Strava account.
 
 ### Will you add support for other platforms?
-Komoot support is planned. A desktop Electron app is also under consideration.
+Komoot support is planned (a separate plugin) and bulk import as well (TrailRoam standalone plugin).

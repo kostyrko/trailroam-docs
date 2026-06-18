@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## From Chrome Web Store
 
-1. Open the [Chrome Web Store listing](https://chromewebstore.google.com) (coming soon)
+1. Open the [Chrome Web Store listing](https://chromewebstore.google.com/detail/gmgjagnoidahjplbkhiibakbpofdoebj?utm_source=item-share-cb)
 2. Click **Add to Chrome**
 3. Confirm the permissions dialog
 
