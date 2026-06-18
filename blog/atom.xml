@@ -2,19 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kostyrko.github.io/trailroam-docs/blog</id>
     <title>TrailRoam Docs Blog</title>
-    <updated>2026-06-14T00:00:00.000Z</updated>
+    <updated>2026-06-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kostyrko.github.io/trailroam-docs/blog"/>
     <subtitle>TrailRoam Docs Blog</subtitle>
-    <icon>https://kostyrko.github.io/trailroam-docs/img/favicon.ico</icon>
+    <icon>https://kostyrko.github.io/trailroam-docs/img/logo.svg</icon>
     <entry>
-        <title type="html"><![CDATA[Introducing TrailRoam for Strava v0.1.0]]></title>
-        <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0</id>
-        <link href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0"/>
+        <title type="html"><![CDATA[Updates to TrailRoam for Strava (v1.0.1 release)]]></title>
+        <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1</id>
+        <link href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1"/>
+        <updated>2026-06-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Activity Panel & Route Emphasis]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-panel--route-emphasis">Activity Panel &amp; Route Emphasis<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1#activity-panel--route-emphasis" class="hash-link" aria-label="Direct link to Activity Panel &amp; Route Emphasis" title="Direct link to Activity Panel &amp; Route Emphasis" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-features">New features:<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1#new-features" class="hash-link" aria-label="Direct link to New features:" title="Direct link to New features:" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p><strong>Collapsible Activity Panel (Map Explorer)</strong></p>
+<p>A new left-side panel on the Map Explorer that slides in from the right edge. Includes search, a "Visible on map" toggle that filters to only activities in the current viewport, sort by newest/longest/A-Z, and a scrollable activity list. Hover highlights the route on
+the map; click selects it, zooms to fit, and opens the detail popup in the bottom-right corner. Panel state  stays open/closed during the session. Time based and activities filtering is connected to main map filters.</p>
+</li>
+<li class="">
+<p><strong>Dynamic Route Emphasis</strong></p>
+<p>Searching or filtering now changes how routes appear: matching routes stay at full opacity, non-matching routes fade to ~15-20%. Clicking a route makes it thicker (7px) and renders it above all others. The side panel tracks selection — selected rows show a green accent bar, bold title, and auto-scroll into view.</p>
+</li>
+<li class="">
+<p><strong>GPX Download from Side Panel</strong></p>
+<p>A persistent green "Download GPX" button at the bottom of the Activity Panel exports all filtered activities as a single zip file. Disabled when no activities are visible.</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="improvements">Improvements:<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1#improvements" class="hash-link" aria-label="Direct link to Improvements:" title="Direct link to Improvements:" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p><strong>Automatic Filter Change Banner</strong></p>
+<p>A green info banner appears the first few times the map auto-selects a filter for you. Dismiss it — it stops showing after the 4th time, permanently.</p>
+</li>
+<li class="">
+<p><strong>Filter Dropdowns Close on Selection</strong></p>
+<p>Activity type and date range dropdowns now close immediately when you pick an option — no extra click needed.</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixes">Fixes:<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1#fixes" class="hash-link" aria-label="Direct link to Fixes:" title="Direct link to Fixes:" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p><strong>Truncated Long Names</strong></p>
+<p>Activity names that are too long now show an ellipsis in the detail panel. Hover for the full name.</p>
+</li>
+<li class="">
+<p><strong>Loading State Fix</strong></p>
+<p>The loading spinner now shows correctly when redirecting from an empty state during the very first sync.</p>
+</li>
+<li class="">
+<p><strong>OpenFreeMap Fallback</strong></p>
+<p>If the default map style URL is unavailable, the app falls back gracefully instead of showing a blank map.</p>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Kostyrko</name>
+            <uri>https://github.com/kostyrko</uri>
+        </author>
+        <category label="release" term="release"/>
+        <category label="strava" term="strava"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing TrailRoam for Strava v1.0.0]]></title>
+        <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.0</id>
+        <link href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.0"/>
         <updated>2026-06-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Browse all your Strava activities on a single interactive map..]]></summary>
         <content type="html"><![CDATA[<p>Browse all your Strava activities on a single interactive map..</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">Features<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="features">Features<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Sync with Strava</strong> — Import activities and GPS routes directly from your logged-in Strava session</li>
 <li class=""><strong>Map Explorer</strong> — View all your Strava GPS routes on one single map. Switch between OpenFreeMap and OpenTopoMap base layers</li>
@@ -29,7 +85,7 @@
 <li class=""><strong>Settings Dashboard</strong> — Settings page with grouped action cards, sync history, and privacy information</li>
 <li class=""><strong>App Menu</strong> — Quick access to release notes, bug reporting, documentation, and the About dialog</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical">Technical<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v0.1.0#technical" class="hash-link" aria-label="Direct link to Technical" title="Direct link to Technical" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="technical">Technical<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.0#technical" class="hash-link" aria-label="Direct link to Technical" title="Direct link to Technical" translate="no">​</a></h2>
 <ul>
 <li class="">Chrome Extension Manifest V3</li>
 <li class="">Angular standalone components</li>

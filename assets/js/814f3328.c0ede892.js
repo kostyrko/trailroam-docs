@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktrailroam_docs=self.webpackChunktrailroam_docs||[]).push([["833"],{5513(a){a.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Introducing TrailRoam for Strava v0.1.0","permalink":"/trailroam-docs/blog/trailroam-for-strava-v0.1.0","unlisted":false,"date":"2026-06-14T00:00:00.000Z"}]}')}}]);
