@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kostyrko.github.io/trailroam-docs/blog</id>
     <title>TrailRoam Docs Blog</title>
-    <updated>2026-06-18T00:00:00.000Z</updated>
+    <updated>2026-06-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kostyrko.github.io/trailroam-docs/blog"/>
     <subtitle>TrailRoam Docs Blog</subtitle>
     <icon>https://kostyrko.github.io/trailroam-docs/img/logo.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Fix release for TrailRoam for Strava (v1.0.2 release)]]></title>
+        <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.2</id>
+        <link href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.2"/>
+        <updated>2026-06-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Issue: syncing all activities every time]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-syncing-all-activities-every-time">Issue: syncing all activities every time<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.2#issue-syncing-all-activities-every-time" class="hash-link" aria-label="Direct link to Issue: syncing all activities every time" title="Direct link to Issue: syncing all activities every time" translate="no">​</a></h2>
+<p>All activities should be synced only once, and subsequent syncs should only fetch new activities. The app tracks the last synced activity ID and uses it to fetch only new activities from Strava.</p>
+<p>technical note: Strava's SPA injects the content script twice due to Webpack module federation, causing a duplicate sync that re-fetches all activities. Added a sessionStorage guard to stop the second injection. Pagination stops early when hitting a known synced activity ID, and only genuinely new activities are sent to the app.</p>]]></content>
+        <author>
+            <name>Kostyrko</name>
+            <uri>https://github.com/kostyrko</uri>
+        </author>
+        <category label="release" term="release"/>
+        <category label="strava" term="strava"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Updates to TrailRoam for Strava (v1.0.1 release)]]></title>
         <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.1</id>
