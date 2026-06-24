@@ -8,11 +8,15 @@ sidebar_position: 4
 
 Open the **Map Explorer** to see all your GPS routes overlaid on a single map. Routes are color-coded by sport type. Click any route to see details, or use the filter toolbar to show only specific activities.
 
-- **Basemap**: Switch between OpenFreeMap and OpenTopoMap
+- **Basemap**: Switch between OpenFreeMap, OpenTopoMap, Esri Satellite, and VersaTiles Aerial
 - **Heatmap**: Toggle a route-density heatmap to find your most traveled roads
 - **Clustering**: At zoomed-out levels, routes are clustered into count circles
 - **Fullscreen**: Expand the map to full viewport
 - **Opacity**: Adjust route line opacity
+- **Filter** by sport type, date range, and route status
+- **Side panel** shows route list (filter to current map view)
+- **Export** selected routes as GPX files or a zip archive
+
 
 ## Activities List
 
@@ -25,7 +29,7 @@ Browse all imported activities in a sortable, filterable table.
 - **Stat cards** show total count, distance, time, and average speed for filtered activities
 - **Bulk select** activities for GPX export or deletion
 
-## Activity Detail Panel
+### Activity Detail Panel
 
 Click any activity to open a side panel with:
 
@@ -38,10 +42,6 @@ Click any activity to open a side panel with:
 ## GPX Export
 
 Export any activity as a GPX 1.1 file. Bulk export selected activities as a zip archive.
-
-## GPX Import
-
-Import external GPX files. Choose sport type and name during import. Distance is computed via Haversine formula.
 
 ## Settings
 
