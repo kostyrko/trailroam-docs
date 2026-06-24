@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kostyrko.github.io/trailroam-docs/blog</id>
     <title>TrailRoam Docs Blog</title>
-    <updated>2026-06-19T00:00:00.000Z</updated>
+    <updated>2026-06-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kostyrko.github.io/trailroam-docs/blog"/>
     <subtitle>TrailRoam Docs Blog</subtitle>
     <icon>https://kostyrko.github.io/trailroam-docs/img/logo.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Performance improvements in TrailRoam for Strava (v1.0.3 release)]]></title>
+        <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.3</id>
+        <link href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.3"/>
+        <updated>2026-06-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What's New]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-new">What's New<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.3#whats-new" class="hash-link" aria-label="Direct link to What's New" title="Direct link to What's New" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>New date range picker</strong> — a redesigned date filter with quick presets (Today, Yesterday, Last 7 days, Last 30 days, This month, This year, All time), a side-by-side dual calendar, and month/year drill-down for faster navigation</li>
+<li class=""><strong>Satellite &amp; aerial basemap layers</strong> — two new map layers in the switcher: Satellite (Esri) and Aerial (VersaTiles)</li>
+<li class=""><strong>Faster map loading</strong> — route data is now loaded in two tiers. The map shows routes faster, full geometry loads only when needed (detail panel, GPX export)</li>
+<li class=""><strong>Smother map interactions</strong> — clicking routes and switching filters feels more responsive</li>
+<li class=""><strong>Post-install welcome page</strong> — onboarding guide opens automatically after installation</li>
+<li class=""><strong>Release popup</strong> — shows what's new after an update, with a clear &amp; re-sync option for better performance</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-existing-users">For Existing Users<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.3#for-existing-users" class="hash-link" aria-label="Direct link to For Existing Users" title="Direct link to For Existing Users" translate="no">​</a></h2>
+<p>To get the full performance benefit, go to <strong>Settings → Clear and re-sync</strong> after updating. This re-imports your data with the new storage format.</p>]]></content>
+        <author>
+            <name>Kostyrko</name>
+            <uri>https://github.com/kostyrko</uri>
+        </author>
+        <category label="release" term="release"/>
+        <category label="strava" term="strava"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fix release for TrailRoam for Strava (v1.0.2 release)]]></title>
         <id>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.2</id>
