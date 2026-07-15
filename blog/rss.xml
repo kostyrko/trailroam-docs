@@ -4,10 +4,80 @@
         <title>TrailRoam Docs Blog</title>
         <link>https://kostyrko.github.io/trailroam-docs/blog</link>
         <description>TrailRoam Docs Blog</description>
-        <lastBuildDate>Wed, 24 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Maintenance, Stability & Permissions Fix (v1.1.1 release)]]></title>
+            <link>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.1</link>
+            <guid>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.1</guid>
+            <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fixed]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed">Fixed<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.1#fixed" class="hash-link" aria-label="Direct link to Fixed" title="Direct link to Fixed" translate="no">​</a></h2>
+<ul>
+<li class="">Chrome Web Store compliance: Removed unused storage and tabs permissions flagged by the store (Purple Potassium violation). All link opening, sync, and storage features continue to work — IndexedDB and chrome.tabs.create don't require these permissions.</li>
+<li class="">Map Explorer side panel: Fixed blank space appearing to the right of the detail panel when it was maximized before closing and then reopened. The expanded state is now correctly cleared on close.</li>
+<li class="">Activity import: Fixed an issue closing the activity import modal.</li>
+<li class="">Activities page: Fixed source filters not behaving correctly.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed">Changed<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.1#changed" class="hash-link" aria-label="Direct link to Changed" title="Direct link to Changed" translate="no">​</a></h2>
+<ul>
+<li class="">Side panel layout: In the activity detail panel, the header (title, date, status, source, and actions menu) now sits above the map, the date displays inline next to the title, and the actions menu is grouped with the status row.</li>
+<li class="">Architecture refactor: Extracted large inline Angular templates/styles into separate ts/html/scss files and split oversized components into presentational child components.</li>
+<li class="">Sync engine: Rebuilt sync architecture with accurate per-run counters and cleaner orchestration.</li>
+<li class="">Storage: Normalized the database dependency injection path across all repositories.</li>
+<li class="">Chrome messaging: Moved extension runtime message parsing and batch persistence out of the App component.</li>
+<li class="">Logging: Replaced noisy debug logs with a small, environment-gated logger.</li>
+<li class="">Backup &amp; Restore: Added validation of record shapes before writing.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="under-the-hood">Under the Hood<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.1#under-the-hood" class="hash-link" aria-label="Direct link to Under the Hood" title="Direct link to Under the Hood" translate="no">​</a></h2>
+<ul>
+<li class="">Added unit, integration, property-based stress, and end-to-end tests.</li>
+<li class="">Centralized shared distance/duration/speed/elevation/date formatting into tested utilities.</li>
+<li class="">Improved folder architecture and strengthened backup/restore validation.</li>
+<li class="">Fixed Angular build and strict template diagnostics.</li>
+</ul>]]></content:encoded>
+            <category>release</category>
+            <category>strava</category>
+        </item>
+        <item>
+            <title><![CDATA[Import Local Activity Files in TrailRoam for Strava (v1.1.0 release)]]></title>
+            <link>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0</link>
+            <guid>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0</guid>
+            <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New Features]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-features">New Features<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="import-local-activity-files-gpx-fit-tcx">Import Local Activity Files (GPX, FIT, TCX)<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#import-local-activity-files-gpx-fit-tcx" class="hash-link" aria-label="Direct link to Import Local Activity Files (GPX, FIT, TCX)" title="Direct link to Import Local Activity Files (GPX, FIT, TCX)" translate="no">​</a></h3>
+<p>Import activities directly from GPX, FIT, and TCX files — no need to upload to Strava first. Imported
+activities behave identically to Strava-synced ones: they appear in Activities, Map Explorer, Heatmap,
+filters, search, statistics, and are exportable.</p>
+<p>Drag and drop files onto the Activities page or click the <strong>Import Activity</strong> button. A two-column modal
+shows a live map preview, parsed stats, and automatically suggests name and sport type based on file
+contents. All processing is local in your browser.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-source--status-visualization">Activity Source &amp; Status Visualization<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#activity-source--status-visualization" class="hash-link" aria-label="Direct link to Activity Source &amp; Status Visualization" title="Direct link to Activity Source &amp; Status Visualization" translate="no">​</a></h3>
+<p>New <strong>Source</strong> and <strong>Status</strong> columns on the Activities page distinguish Strava-synced activities from
+imported ones, and completed from planned. A dedicated source filter row with live count chips lets you
+instantly filter by All, Strava, Imported (Done), or Imported (Planned).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="source--status-in-map-explorer">Source &amp; Status in Map Explorer<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#source--status-in-map-explorer" class="hash-link" aria-label="Direct link to Source &amp; Status in Map Explorer" title="Direct link to Source &amp; Status in Map Explorer" translate="no">​</a></h3>
+<p>The Map Explorer sidebar now includes source filter chips, compact Completed/Planned badges on activity
+rows, and both status and source labels in the detail panel. Planned activities gracefully show <code>—</code> for
+unavailable statistics.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="edit-activity-dialog">Edit Activity Dialog<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#edit-activity-dialog" class="hash-link" aria-label="Direct link to Edit Activity Dialog" title="Direct link to Edit Activity Dialog" translate="no">​</a></h3>
+<p>The rename dialog is now an <strong>Edit Activity</strong> dialog — update name, sport type, and completed/planned status
+in one place. Available from the Activities page 3-dot menu, the Map Explorer activity card pencil icon,
+and the detail panel 3-dot menu.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="improvements">Improvements<a href="https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.1.0#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements" translate="no">​</a></h2>
+<ul>
+<li class="">Redesigned activity card in Map Explorer with clean white layout, elevation profile chart, and action
+buttons</li>
+<li class="">Map scale moved to bottom-right; smooth panel transition animations</li>
+<li class="">Settings page shows IndexedDB schema version for migration awareness</li>
+<li class="">Source filter chips collapsible with smooth expand/collapse animation</li>
+</ul>]]></content:encoded>
+            <category>release</category>
+            <category>strava</category>
+        </item>
         <item>
             <title><![CDATA[Performance improvements in TrailRoam for Strava (v1.0.3 release)]]></title>
             <link>https://kostyrko.github.io/trailroam-docs/blog/trailroam-for-strava-v1.0.3</link>
